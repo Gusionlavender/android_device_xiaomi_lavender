@@ -22,8 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from lavender device
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit some common Mokee stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/aosp/config/telephony.mk)
+$(call inherit-product, vendor/aosp/config/aex_props.mk)
+
 
 PRODUCT_NAME := aosp_lavender
 PRODUCT_BRAND := Xiaomi
@@ -37,6 +40,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="lavender" \
     PRODUCT_NAME="lavender" \
     BUILD_FINGERPRINT="xiaomi/lavender/lavender:9/PKQ1.180904.001/9.5.16:user/release-keys" \
-    PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 9.5.16 release-keys"
+    
+PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 9.5.16 release-keys"
 
 TARGET_VENDOR := Xiaomi
