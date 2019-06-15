@@ -27,6 +27,7 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 $(call inherit-product, vendor/aosp/config/telephony.mk)
 $(call inherit-product, vendor/aosp/config/aex_props.mk)
 
+TARGET_BOOT_ANIMATION_RES := 2140
 
 PRODUCT_NAME := aosp_lavender
 PRODUCT_BRAND := Xiaomi
