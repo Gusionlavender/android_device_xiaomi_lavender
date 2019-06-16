@@ -44,4 +44,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := "xiaomi/lavender/lavender:9/PKQ1.180904.001/V10.3.5.0.PFGMIXM:user/release-keys"
 
+# Include Gapps
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_MINIMAL_APPS := true
+IS_PHONE := true
+
 TARGET_VENDOR := Xiaomi
