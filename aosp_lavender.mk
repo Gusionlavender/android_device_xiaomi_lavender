@@ -44,10 +44,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := "xiaomi/lavender/lavender:9/PKQ1.180904.001/V10.3.5.0.PFGMIXM:user/release-keys"
 
-
-
-
-
-
-
 TARGET_VENDOR := Xiaomi
+
+
+
+
+
+
