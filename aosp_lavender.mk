@@ -23,13 +23,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/pixys/config/common.mk)
 $(call inherit-product, vendor/aosp/config/telephony.mk)
 $(call inherit-product, vendor/aosp/config/aex_props.mk)
 
 TARGET_BOOT_ANIMATION_RES := 2140
 
-PRODUCT_NAME := aosp_lavender
+PRODUCT_NAME := pixys_lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lavender
 PRODUCT_MANUFACTURER := Xiaomi
@@ -44,10 +44,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := "xiaomi/lavender/lavender:9/PKQ1.180904.001/V10.3.5.0.PFGMIXM:user/release-keys"
 
-# Include Gapps
-WITH_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
-TARGET_MINIMAL_APPS := true
-IS_PHONE := true
+
+
+
+
+
 
 TARGET_VENDOR := Xiaomi
